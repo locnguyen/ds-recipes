@@ -69,11 +69,11 @@ describe('Recipes selector', () => {
             'cook_time': 60,
             'ingredients': ['Rice', 'Chicken Stock', 'Parmesan Cheese', 'White Wine', 'Butter', 'Salt', 'Pepper', 'Peas']
         }, {
-                'name': 'Fried Rice',
-                'type': 'Chinese',
-                'cook_time': 28,
-                'ingredients': ['Onion', 'Oil', 'Rice', 'Egg', 'Soy Sauce', 'Sesame Oil', 'Chicken', 'Carrot', 'Peas']
-            }];
+            'name': 'Fried Rice',
+            'type': 'Chinese',
+            'cook_time': 28,
+            'ingredients': ['Onion', 'Oil', 'Rice', 'Egg', 'Soy Sauce', 'Sesame Oil', 'Chicken', 'Carrot', 'Peas']
+        }];
 
         const state = {
             data,

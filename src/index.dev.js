@@ -10,7 +10,8 @@ import configureStore from './configureStore';
 import getRoutes from './routes';
 import { saveStateTree, loadStateTree } from './localStorage';
 
-const store = configureStore(loadStateTree());
+const existingState = loadStateTree();
+const store = configureStore(existingState);
 const history = syncHistoryWithStore(browserHistory, store);
 store.subscribe(throttle(() => saveStateTree(store.getState()), 500));
 

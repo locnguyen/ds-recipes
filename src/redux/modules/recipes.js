@@ -40,28 +40,29 @@ const initialState = {
 
 export const recipesReducer = (state = initialState, action) => {
     switch (action.type) {
-        case GET_RECIPES:
-            return { ...state, data: action.payload };
+    case GET_RECIPES: {
+        return { ...state, data: action.payload };
+    }
+    case FILTER_RECIPES_BY_INGREDIENT: {
+        return { ...state, selectedIngredient: action.payload };
+    }
+    case TOGGLE_RECIPES: {
+        const data = state.data.map(recipe => {
+            if (action.payload.indexOf(recipe.name) === -1) {
+                return recipe;
+            }
 
-        case FILTER_RECIPES_BY_INGREDIENT:
-            return { ...state, selectedIngredient: action.payload };
+            return {
+                ...recipe,
+                selected: !recipe.selected
+            };
+        });
 
-        case TOGGLE_RECIPES:
-            const data = state.data.map(recipe => {
-                if (action.payload.indexOf(recipe.name) === -1) {
-                    return recipe;
-                }
-
-                return {
-                    ...recipe,
-                    selected: !recipe.selected
-                };
-            });
-
-            return { ...state, data };
-
-        default:
-            return state;
+        return { ...state, data };
+    }
+    default: {
+        return state;
+    }
     }
 };
 

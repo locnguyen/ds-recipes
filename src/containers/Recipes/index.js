@@ -32,6 +32,7 @@ class Recipes extends React.Component {
 }
 
 Recipes.propTypes = {
+    getRecipes: PropTypes.func,
     recipes: PropTypes.array,
     selectedIngredient: PropTypes.string,
     filterRecipesByIngredient: PropTypes.func,

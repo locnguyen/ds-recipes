@@ -10,7 +10,8 @@
   "env": {
     "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "mocha": true
   },
   "extends": ["airbnb-base", "eslint:recommended", "plugin:react/recommended"],
   "parser": "babel-eslint",
@@ -22,7 +23,8 @@
     "babel",
     "import",
     "react",
-    "lodash"
+    "lodash",
+    "mocha"
   ],
   "settings": {
     "import/resolver": {

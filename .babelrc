@@ -2,7 +2,8 @@
     "presets": [
         "es2015",
         "stage-0",
-        "react"
+        "react",
+        "mocha"
     ],
     "plugins": ["transform-object-rest-spread", "transform-es2015-destructuring", "transform-async-to-generator"],
     "env": {
