@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+.env
+build/
+*.log
+node_modules/
+typings/globals/

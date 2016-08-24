@@ -1,0 +1,20 @@
+{
+    "presets": [
+        "es2015",
+        "stage-0",
+        "react"
+    ],
+    "plugins": ["transform-object-rest-spread", "transform-es2015-destructuring", "transform-async-to-generator"],
+    "env": {
+        "development": {
+            "plugins": [
+                "react-hot-loader/babel"
+            ]
+        },
+        "production": {
+            "presets": [
+                "react-optimize"
+            ]
+        }
+    }
+}

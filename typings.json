@@ -1,0 +1,15 @@
+{
+  "name": "poqet-web",
+  "dependencies": {},
+  "globalDependencies": {
+    "enzyme": "registry:dt/enzyme#2.4.1+20160709041153",
+    "history": "registry:dt/history#1.8.0+20160316155526",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "react": "registry:dt/react#0.14.0+20160720060442",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "react-router": "registry:dt/react-router#2.0.0+20160621215300",
+    "react-router-redux": "registry:dt/react-router-redux#4.0.0+20160703120921",
+    "redux": "registry:dt/redux#3.5.2+20160703092728",
+    "redux-thunk": "registry:dt/redux-thunk#2.1.0+20160703120921"
+  }
+}
