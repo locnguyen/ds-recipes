@@ -32,6 +32,9 @@
   "author": "Loc Nguyen, lochnguyen@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "bunyan": "^1.8.1",
+    "hapi": "^14.2.0",
+    "inert": "^4.0.2",
     "lodash": "^4.15.0",
     "react": "^15.2.1",
     "react-bootstrap": "^0.30.3",
@@ -78,7 +81,6 @@
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
-    "webpack-hot-middleware": "^2.12.1",
-    "webpack-node-externals": "^1.2.0"
+    "webpack-hot-middleware": "^2.12.1"
   }
 }
