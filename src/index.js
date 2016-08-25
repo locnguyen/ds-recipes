@@ -9,6 +9,7 @@ import getRoutes from './routes';
 import { saveStateTree, loadStateTree } from './localStorage';
 
 const existingState = loadStateTree();
+console.log('debug existingState', existingState); // eslint-disable-line no-console
 const store = configureStore(existingState);
 const history = syncHistoryWithStore(browserHistory, store);
 store.subscribe(throttle(() => saveStateTree(store.getState()), 500));
