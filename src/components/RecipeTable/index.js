@@ -18,6 +18,10 @@ IngredientsList.propTypes = {
     filterRecipesByIngredient: PropTypes.func
 };
 
+IngredientsList.defaultProps = {
+    ingredients: []
+};
+
 const RecipeTable = ({ recipes, filterRecipesByIngredient, toggleRecipe, selectedIngredient }) => (
     <table className="table table-bordered table-hover">
         <thead>
