@@ -86,7 +86,7 @@ const selectRecipesByIngredient = createSelector(
 
 const selectIngredientsFromSelectedRecipes = createSelector(
     [getRecipesList],
-    (recipes) => recipes
+    (recipes = []) => recipes
             .filter(recipe => recipe.selected)
             .map(r => r.ingredients)
             .reduce((prev, curr) => prev.concat(curr).filter((ingredient, idx, arr) => arr.indexOf(ingredient) === idx), [])
