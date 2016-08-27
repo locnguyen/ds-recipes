@@ -1,13 +1,24 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const pkg = require('./package.json');
-const _ = require('lodash');
 
 module.exports = {
     entry: {
         js: './src/index',
-        vendor: _.keys(pkg.dependencies)
+        vendor: [
+            'json-loader',
+            'lodash',
+            'react',
+            'react-bootstrap',
+            'react-dom',
+            'react-router',
+            'react-router-redux',
+            'redux',
+            'redux-devtools',
+            'redux-devtools-dock-monitor',
+            'redux-devtools-log-monitor',
+            'redux-thunk'
+        ]
     },
     output: {
         filename: 'bundle.js',
@@ -46,6 +57,9 @@ module.exports = {
             test: /\.js$/,
             loaders: ['babel'],
             include: path.join(__dirname, 'src')
+        }, {
+            test: /\.json/,
+            loader: 'json'
         }]
     }
 };
